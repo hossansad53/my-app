@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>مخزن قطع LG</title>
+  <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/LG_logo_%282015%29.svg/2560px-LG_logo_%282015%29.svg.png" alt="شعار LG" />
+  
+  <h1>مخزن قطع LG</h1>
+  <p id="designerName">حسين سعد</p>
+
+  <input
+    id="searchInput"
+    type="text"
+    placeholder="ابحث باسم القطعة..."
+    list="nameSuggestions"
+    autocomplete="off"
+  />
+  <datalist id="nameSuggestions"></datalist>
+
+  <table id="itemsTable">
+    <thead>
+      <tr>
+        <th>اسم القطعة</th>
+        <th>رقم البارت</th>
+        <th>مكان القطعة</th>
+        <th>إجراءات</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <form id="addForm">
+    <label for="itemName">اسم القطعة:</label>
+    <input id="itemName" type="text" required />
+
+    <label for="partNumber">رقم البارت:</label>
+    <input id="partNumber" type="text" required />
+
+    <label for="location">مكان القطعة:</label>
+    <input id="location" type="text" />
+
+    <button type="submit">إضافة قطعة</button>
+    <p id="message"></p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
